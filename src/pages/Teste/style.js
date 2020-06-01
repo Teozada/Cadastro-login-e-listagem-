@@ -7,11 +7,12 @@ export const Mainstyled = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color:#900020;
 
   form{
     max-width:500px;
     width:100%;
-    height:500px;
+    height:620px;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -38,19 +39,25 @@ export const Mainstyled = styled.main`
 
   button{
     background:none;
-    color:#3f89ec;
+    color:#000000;
     cursor:pointer;
     border:none;
     outline:none;
     font-weight:600;
     font-size:14px;
     padding:15px;
-    border-radius:5px
+    border-radius:5px;
+    margin-top: 10px;
+  }
+
+  button:hover{
+    background:#fff;
+    transition:0.5s
   }
 
   
   img{
-    height:40px;
-    margin:50px 0 0 0;
+    height:60px;
+    margin:70px 0 0 0;
   }
 `

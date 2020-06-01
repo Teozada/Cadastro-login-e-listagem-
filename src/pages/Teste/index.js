@@ -10,13 +10,14 @@ export default function Teste(){
   const [email,setemail] = useState('');
   const [senha,setSenha] = useState('');
   const [telefone,setTelefone] = useState('');
+  const [cep,setCep] = useState('');
 
   const [user,setUser] = useState({})
   const [userArray,setUserArray] = useState(JSON.parse(localStorage.getItem('users')))
 
   useEffect(()=>{
-    setUser({name,email,senha,telefone})
-  },[name,email,senha,telefone])
+    setUser({name,email,senha,telefone,cep})
+  },[name,email,senha,telefone,cep])
 
   function login(e){
     e.preventDefault();
@@ -28,6 +29,7 @@ export default function Teste(){
       email,
       senha,
       telefone,
+      cep,
     }]
     localStorage.setItem('users',JSON.stringify(array));
     history.push('/')
@@ -37,7 +39,7 @@ export default function Teste(){
     <Mainstyled>
       <form onSubmit={login}>
         <Link to="/">
-      <img src={'https://www.google.com.br/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png'}/>
+      <img src={'https://4.bp.blogspot.com/-tsz-9YDef0U/WyrZkJmNRtI/AAAAAAABrNY/OxZhpz7UKbgl3xTP3w7Rwxl1PMCAEVNtgCLcBGAs/s1600/brahma%2Blogo.jpg'}/>
       </Link>
       <h1>Criar Conta</h1>
 
@@ -59,7 +61,6 @@ export default function Teste(){
          type="password"
          onChange={text=>setSenha(text.target.value)}
          required
-         minLength="3"
          />
 
         <input
@@ -67,7 +68,13 @@ export default function Teste(){
          type="number"
          onChange={text=>setTelefone(text.target.value)}
          required
-         minLength="1"
+         />
+
+        <input
+         placeholder="CEP"
+         type="number"
+         onChange={text=>setCep(text.target.value)}
+         required         
          />
 
        

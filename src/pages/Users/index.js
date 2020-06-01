@@ -24,6 +24,7 @@ export default function Users(){
       
     return(
       <Mainstyled>
+         <img src={'https://4.bp.blogspot.com/-tsz-9YDef0U/WyrZkJmNRtI/AAAAAAABrNY/OxZhpz7UKbgl3xTP3w7Rwxl1PMCAEVNtgCLcBGAs/s1600/brahma%2Blogo.jpg'}/>
         {currentUser !== ''&&(
           <h1>Olá, {currentUser.name}</h1>
         )}
@@ -35,6 +36,7 @@ export default function Users(){
        <label>Nome:<span>{item.name}</span></label>
        <label>Email:<span>{item.email}</span></label>
        <label>Senha:<span>{item.senha}</span></label>
+       <label>Cep:<span>{item.cep}</span></label>
      </div>
     ))}      
     </section> 

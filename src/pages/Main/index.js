@@ -10,13 +10,13 @@ export default function Main(){
   function login(){
     let user = JSON.parse(localStorage.getItem(email))
     if(user === null){
-      alert('Deu ruim ladrão')
+      alert('Login Incorreto!')
       return
     }else if(user.senha === senha){
       localStorage.setItem('currentUser',email)
       history.push('/users')
     }else{
-      alert('Deu ruim vagabundo')
+      alert('Senha Incorreta!')
     }
 
     
@@ -26,7 +26,7 @@ export default function Main(){
     <Mainstyled>
     <section>
       <Link to="/"> 
-    <img src={'https://www.google.com.br/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png'}/>
+    <img src={'https://4.bp.blogspot.com/-tsz-9YDef0U/WyrZkJmNRtI/AAAAAAABrNY/OxZhpz7UKbgl3xTP3w7Rwxl1PMCAEVNtgCLcBGAs/s1600/brahma%2Blogo.jpg'}/>
     
     </Link>
     <h1>Fazer Login</h1>

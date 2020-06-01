@@ -6,10 +6,11 @@ export const Mainstyled = styled.main`
   align-items: center;
   display: flex;
   flex-direction: column;
+  background-color:#900020;
 
   section{
     width:80%;
-    border:1px solid #ccc;
+    border:1px solid #000000;
     height:400px;
     border-radius:10px;
     display:flex;
@@ -25,14 +26,19 @@ export const Mainstyled = styled.main`
   }
 
   section::-webkit-scrollbar-thumb{
-    background:#000;
+    background:#000000;
     border-radius:15px
   }
 
+  img{
+    height:60px;
+    margin:70px 0 0 0;
+  }
+  
   div{
     display:flex;
     flex-direction:column;
-    border:1px solid #ccc;
+    border:1px solid #000000;
     width:300px;
     height:200px;
     padding:15px;
@@ -47,12 +53,12 @@ export const Mainstyled = styled.main`
 
   span{
     font-size:25px;
-    color:#3f89ec;
+    color:#ffffff;
   }
   
   button{
-    background:#3f89ec;
-    color:white;
+    background:none;
+    color:#000000;
     cursor:pointer;
     border:none;
     outline:none;
@@ -60,10 +66,10 @@ export const Mainstyled = styled.main`
     font-size:14px;
     padding:15px;
     border-radius:5px;
+    margin-top: 10px;
   }
 
   button:hover{
-    background:#3f89ec;
-    color:white;
+    background:#fff;
   }
   `

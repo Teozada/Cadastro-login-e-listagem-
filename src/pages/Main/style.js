@@ -7,6 +7,7 @@ export const Mainstyled = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #900020;
 
   section{
     max-width:500px;
@@ -20,8 +21,8 @@ export const Mainstyled = styled.main`
   }
 
   img{
-    height:40px;
-    margin:50px 0 0 0;
+    height:60px;
+    margin:70px 0 0 0;
   }
 
   h1{
@@ -52,7 +53,7 @@ export const Mainstyled = styled.main`
 
   button{
     background:none;
-    color:#3f89ec;
+    color:#000000;
     cursor:pointer;
     border:none;
     outline:none;
@@ -63,16 +64,16 @@ export const Mainstyled = styled.main`
   }
 
   button:hover{
-    background:#c5dcf9;
+    background:#fff;
     transition:0.5s
   }
 
   button+button{
-    background:#3f89ec;
+    background:#fff;
     color:white;
   }
 
   button+button:hover{
-    background:#3f89ec;
+    background:#fff;
   }
 `
