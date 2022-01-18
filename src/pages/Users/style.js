@@ -6,7 +6,7 @@ export const Mainstyled = styled.main`
   align-items: center;
   display: flex;
   flex-direction: column;
-  background-color:#900020;
+  background-color:#fff;
 
   section{
     width:80%;
@@ -53,12 +53,12 @@ export const Mainstyled = styled.main`
 
   span{
     font-size:25px;
-    color:#ffffff;
+    color:#000000;
   }
   
   button{
     background:none;
-    color:#000000;
+    color:#900020;
     cursor:pointer;
     border:none;
     outline:none;

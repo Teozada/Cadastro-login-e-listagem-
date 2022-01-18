@@ -7,7 +7,7 @@ export const Mainstyled = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #900020;
+  background-color: #fff;
 
   section{
     max-width:500px;
@@ -53,7 +53,7 @@ export const Mainstyled = styled.main`
 
   button{
     background:none;
-    color:#000000;
+    color:#900020;
     cursor:pointer;
     border:none;
     outline:none;
